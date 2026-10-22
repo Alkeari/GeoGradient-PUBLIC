@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "${modId}",
+  "version": "${modVersion}",
+  "name": "${modName}",
+  "description": "${modDescription}",
+  "authors": ["${modAuthor}"],
+  "license": "${modLicense}",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.alkeari.geogradient.fabric.GeoGradientFabric"
+    ],
+    "modmenu": [
+      "com.alkeari.geogradient.fabric.GeoGradientModMenu"
+    ]
+  },
+  "mixins": [
+    "geogradient.common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${depsFabricLoader}",
+    "fabric-api": "*",
+    "minecraft": "${minecraftRange}",
+    "cloth-config2": ">=${depsClothConfig}"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
